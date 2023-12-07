@@ -7,7 +7,7 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
-@app.route('/products', "methods=['GET']")
+@app.route('/products', methods=['GET'])
 def products():
     return render_template("products.html")
 
